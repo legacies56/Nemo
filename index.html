@@ -33,20 +33,27 @@
         }
         .header a {
             color: white;
-            margin: 0 200px;
+            margin: 0 10px;
             text-decoration: none;
-            font-size: 2em;
+            font-size: 1.5em;
         }
         .content {
             position: absolute;
             top: 30%;
         }
-        .content h1 {
-            color: black; /* Change the color of the h1 text */
-        }
-        .content h2 {
-            color: black; /* Change the color of the h2 text */
+        .content h1, .content h2 {
             font-size: 2em;
+            animation: rainbowGlow 1.5s infinite;
+        }
+        @keyframes rainbowGlow {
+            0% { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 25px red, 0 0 30px red, 0 0 35px red; }
+            14% { color: orange; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 25px orange, 0 0 30px orange, 0 0 35px orange; }
+            28% { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 25px yellow, 0 0 30px yellow, 0 0 35px yellow; }
+            42% { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green, 0 0 25px green, 0 0 30px green, 0 0 35px green; }
+            57% { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue, 0 0 30px blue, 0 0 35px blue; }
+            71% { color: indigo; text-shadow: 0 0 5px indigo, 0 0 10px indigo, 0 0 15px indigo, 0 0 20px indigo, 0 0 25px indigo, 0 0 30px indigo, 0 0 35px indigo; }
+            85% { color: violet; text-shadow: 0 0 5px violet, 0 0 10px violet, 0 0 15px violet, 0 0 20px violet, 0 0 25px violet, 0 0 30px violet, 0 0 35px violet; }
+            100% { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 25px red, 0 0 30px red, 0 0 35px red; }
         }
         .additional-gifs {
             margin-top: 20px;
@@ -67,7 +74,6 @@
         <h1>Havoc</h1> 
         <h2 id="count-el">big kahpe sharmota</h2>
        
-        
     </div>
     <script src="index.js"></script>
 </body>
